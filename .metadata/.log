@@ -1,0 +1,288 @@
+!SESSION 2020-10-16 16:16:34.317 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_77
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/rajkumar-1250/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Users/rajkumar-1250/Desktop/automate -product org.eclipse.epp.package.jee.product -keyring /Users/rajkumar-1250/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-10-16 16:16:37.771
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.zoho.zide 4 4 2020-10-16 16:16:47.968
+!MESSAGE Error on putting entry for parent service
+!STACK 0
+java.lang.NullPointerException
+	at com.zoho.zide.activator.PluginStarter.updateParentServiceEntry(PluginStarter.java:305)
+	at com.zoho.zide.activator.PluginStarter.updateServiceXML(PluginStarter.java:269)
+	at com.zoho.zide.activator.PluginStarter.earlyStartup(PluginStarter.java:228)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.zoho.zide 1 0 2020-10-16 16:16:48.098
+!MESSAGE This ZIDE Scheduler Started
+
+!ENTRY com.zoho.zide 1 0 2020-10-16 16:16:48.099
+!MESSAGE Hacksaw Scheduler Started
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:16:48.519
+!MESSAGE Error while cloning the repository
+!STACK 1
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 255 2020-10-16 16:16:48.519
+!MESSAGE abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:16:48.525
+!MESSAGE Error while cloning the repository
+!STACK 1
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 255 2020-10-16 16:16:48.525
+!MESSAGE abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:16:48.527
+!MESSAGE Error while clone/update hg for the given project :: codecheck
+!STACK 1
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 255 2020-10-16 16:16:48.527
+!MESSAGE abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:16:48.527
+!MESSAGE Error while clone/update hg for the given project :: codecheck
+!STACK 1
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+	at com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+	at com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+	at com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+	at com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 com.vectrace.MercurialEclipse 4 255 2020-10-16 16:16:48.527
+!MESSAGE abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-10-16 16:16:51.750
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1. ; version: 2.0.4.v20170307-1435
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:176)
+	at com.google.gson.Gson.fromJson(Gson.java:803)
+	at com.google.gson.Gson.fromJson(Gson.java:768)
+	at com.google.gson.Gson.fromJson(Gson.java:717)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:93)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:70)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:374)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:165)
+	... 9 more
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:17:14.336
+!MESSAGE Error while downloading file
+!STACK 0
+java.lang.Exception: Not a valid file for download
+	at com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:301)
+	at com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:257)
+	at com.zoho.zide.util.ZideConfig.downloadConfiguration(ZideConfig.java:566)
+	at com.zoho.zide.scheduler.AutomaticUpdateJob$1.run(AutomaticUpdateJob.java:74)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:17:14.940
+!MESSAGE Error while downloading file
+!STACK 0
+java.lang.Exception: Not a valid file for download
+	at com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:301)
+	at com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:261)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:17:14.941
+!MESSAGE Error while downloading file
+!STACK 0
+java.lang.Exception: Not a valid file for download
+	at com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:301)
+	at com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:261)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:17:14.941
+!MESSAGE Error while downloading Zide Configurations Files
+!STACK 0
+java.lang.NullPointerException
+	at com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:262)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.zoho.zide 2 2 2020-10-16 16:17:14.942
+!MESSAGE Error while downloading Zide Configurations Files
+!STACK 0
+java.lang.NullPointerException
+	at com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:262)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+	at com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+	at com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:17:45.405
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:17:45.408
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:18:45.651
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:18:45.653
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:19:10.057
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:19:10.060
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:21:33.216
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:21:33.218
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:21:43.367
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:21:43.369
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:29:34.739
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:29:34.741
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:31:14.529
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:31:14.530
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:31:27.567
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:31:27.570
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface.text 2 0 2020-10-16 16:34:52.208
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-10-16 16:34:52.209
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:34:58.783
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/neon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/neon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2020-10-16 16:34:58.785
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:35:28.919
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:35:28.921
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:36:48.660
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:36:48.662
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:37:24.504
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:37:24.505
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:37:33.907
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:37:33.908
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:38:11.964
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:38:11.966
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:40:21.001
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-10-16 16:40:21.003
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

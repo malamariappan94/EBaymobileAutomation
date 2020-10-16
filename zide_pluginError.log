@@ -1,0 +1,125 @@
+
+v1.0.167 [ERROR] 2020.10.16 AD at 16:16:47 IST
+Error on putting entry for parent service
+java.lang.NullPointerException
+com.zoho.zide.activator.PluginStarter.updateParentServiceEntry(PluginStarter.java:305)
+com.zoho.zide.activator.PluginStarter.updateServiceXML(PluginStarter.java:269)
+com.zoho.zide.activator.PluginStarter.earlyStartup(PluginStarter.java:228)
+org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [INFO] 2020.10.16 AD at 16:16:48 IST
+This ZIDE Scheduler Started
+
+v1.0.167 [INFO] 2020.10.16 AD at 16:16:48 IST
+Hacksaw Scheduler Started
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:16:48 IST
+Error while cloning the repository
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:16:48 IST
+Error while cloning the repository
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:16:48 IST
+Error while clone/update hg for the given project :: codecheck
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:16:48 IST
+Error while clone/update hg for the given project :: codecheck
+abort: error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:590). Command line: /Users/rajkumar-1250/Desktop/automate/.zide/repository:hg -y clone --noupdate https://***@cmsuite.csez.zohocorpin.com/integ//codecheck codecheck, error code: 255
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand$ProzessWrapper.checkError(AbstractShellCommand.java:217)
+com.vectrace.MercurialEclipse.commands.CommandJob.execute(CommandJob.java:217)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToStream(AbstractShellCommand.java:347)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:327)
+com.vectrace.MercurialEclipse.commands.AbstractShellCommand.executeToBytes(AbstractShellCommand.java:316)
+com.vectrace.MercurialEclipse.commands.HgCloneClient.clone(HgCloneClient.java:52)
+com.zoho.zide.hg.ZideMercurialRepository.cloneRepository(ZideMercurialRepository.java:120)
+com.zoho.zide.hg.ZideMercurialRepository.cloneorupdate(ZideMercurialRepository.java:242)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:37)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:17:14 IST
+Error while downloading file
+java.lang.Exception: Not a valid file for download
+com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:301)
+com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:257)
+com.zoho.zide.util.ZideConfig.downloadConfiguration(ZideConfig.java:566)
+com.zoho.zide.scheduler.AutomaticUpdateJob$1.run(AutomaticUpdateJob.java:74)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:17:14 IST
+Error while downloading file
+java.lang.Exception: Not a valid file for download
+com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:301)
+com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:261)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:17:14 IST
+Error while downloading file
+java.lang.Exception: Not a valid file for download
+com.zoho.zide.util.FileUtils.downloadFile(FileUtils.java:301)
+com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:261)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:17:14 IST
+Error while downloading Zide Configurations Files
+java.lang.NullPointerException
+com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:262)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+v1.0.167 [WARNING] 2020.10.16 AD at 16:17:14 IST
+Error while downloading Zide Configurations Files
+java.lang.NullPointerException
+com.zoho.zide.util.FileUtils.downloadAndExtract(FileUtils.java:262)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:37)
+com.zoho.zide.codecheck.LiveStreamReader.forceSync(LiveStreamReader.java:32)
+com.zoho.zide.activator.ZideWorkspaceSettings.init(ZideWorkspaceSettings.java:82)
+com.zoho.zide.activator.ZideWorkspaceSettings.run(ZideWorkspaceSettings.java:42)
+org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

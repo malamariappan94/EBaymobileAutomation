@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+hg.commit.template=\nLEGAL DECLARATION\:I hereby declare that the code submitted by me has not been copied from any third party source without due verification of license terms and does not infringe third party intellectual property rights. I also hereby declare that the code does not contain any offensive or abusive content.\nLICENSE COMPATIBLE\:NO
+zide.gitignore=.zide_resources/*|.externalToolBuilders/*|.settings/*|.pmd|.classpath|.project|build/build.xml|build/library.xml
+zide.hgignore=\\.zide_resources/.*|\\.externalToolBuilders/.*|\\.settings|\\.pmd|\\.classpath|\\.project|\\.hgignore|build/build\\.xml|build/library\\.xml
+zide.instances=
+zide.version=1.0.167

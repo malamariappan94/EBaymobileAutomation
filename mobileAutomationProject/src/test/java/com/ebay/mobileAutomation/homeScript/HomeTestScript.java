@@ -19,7 +19,7 @@ public class HomeTestScript extends TestBase{
 	
 	ExtentTest logger;
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	public void searchItems()throws Exception{
 		
 		//String search = "65 inches tv";
@@ -51,7 +51,7 @@ public class HomeTestScript extends TestBase{
 		
 	}
 	
-	@Test(priority=2)
+	@Test(priority=3)
 	public void chooseOneItem() throws Exception{
 		
 		logger = extent.createTest("Select the searched item");

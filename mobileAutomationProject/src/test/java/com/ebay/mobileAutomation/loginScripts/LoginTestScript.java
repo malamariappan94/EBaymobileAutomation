@@ -12,19 +12,12 @@ import com.ebay.mobileAutomation.webGeneralFunctions.GeneralFunctions;
 public class LoginTestScript extends TestBase{
 	
 	ExtentTest logger;
+	
 	@Test(priority=0)
-	public void login()throws Exception{
+	public void existingUserPage()throws Exception{
 		
 		logger = extent.createTest("Login to the application");
 		
-		ReadExcelData data = new ReadExcelData();
-		
-		String[] loginDetails = data.readLoginDetails();
-		String username = loginDetails[0];
-		String password = loginDetails[1];
-		
-		
-		System.out.println("username : "+username+" passowrd :"+password);
 		
 		LoginPage login = new LoginPage();
 		GeneralFunctions gn = new GeneralFunctions();
@@ -33,7 +26,19 @@ public class LoginTestScript extends TestBase{
 		gn.click(login.exitingUserButton(driver), logger, driver);
 		Thread.sleep(5000);
 		
-		//System.out.println("page source : "+driver.getPageSource());
+		
+	}
+	
+	@Test(priority=1)
+	public void enterUserName() throws Exception{
+		
+		ReadExcelData data = new ReadExcelData();
+		LoginPage login = new LoginPage();
+		GeneralFunctions gn = new GeneralFunctions();
+		
+		String[] loginDetails = data.readLoginDetails();
+		String username = loginDetails[0];
+		String password = loginDetails[1];
 		
 		LoginPage.changeDriverContextToWeb(driver);
 		Thread.sleep(1000);
@@ -60,10 +65,9 @@ public class LoginTestScript extends TestBase{
 		gn.click(login.signInButton(driver), logger, driver);
 		Thread.sleep(5000);
 		
-		
-		
-		
 	}
+	
+	
 	
 	
 	

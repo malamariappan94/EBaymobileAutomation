@@ -50,25 +50,58 @@ public class LoginTestScript extends TestBase{
 		LoginPage.switchToNative(driver);
 		Thread.sleep(1000);
 		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	@Test(priority=2)
+	public void pressContinueButton() throws Exception{
+		
+		LoginPage login = new LoginPage();
+		GeneralFunctions gn = new GeneralFunctions();
+		
 		//press the continue button
-		gn.click(login.continueButton(driver), logger, driver);
-		Thread.sleep(5000);
+		 gn.click(login.continueButton(driver), logger, driver);
+		 Thread.sleep(5000);
+	}
+	
+	@Test(priority=3)
+	public void enterPassword() throws Exception{
+		
+		LoginPage login = new LoginPage();
+		GeneralFunctions gn = new GeneralFunctions();
+		ReadExcelData data = new ReadExcelData();
+		
+		String[] loginDetails = data.readLoginDetails();
+		//String username = loginDetails[0];
+		String password = loginDetails[1];
 		
 		LoginPage.changeDriverContextToWeb(driver);
 		Thread.sleep(1000);
 		
+		
+
 		gn.sendKeys(password, login.passwordTextField(driver), logger, driver);
 		Thread.sleep(1000);
-		
-		
-		//press the sign in button
-		gn.click(login.signInButton(driver), logger, driver);
-		Thread.sleep(5000);
-		
 	}
 	
-	
-	
+	@Test(priority=4)
+	public void clickSignInButton()throws Exception{
+		
+		LoginPage login = new LoginPage();
+		GeneralFunctions gn = new GeneralFunctions();
+		
+		//press the sign in button
+		 gn.click(login.signInButton(driver), logger, driver);
+		 Thread.sleep(5000);
+				
+	}
 	
 	
 

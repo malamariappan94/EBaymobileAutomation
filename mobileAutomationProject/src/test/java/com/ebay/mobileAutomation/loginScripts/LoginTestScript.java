@@ -55,8 +55,6 @@ public class LoginTestScript extends TestBase{
 		
 		
 		
-		
-		
 	}
 	
 	@Test(priority=2)

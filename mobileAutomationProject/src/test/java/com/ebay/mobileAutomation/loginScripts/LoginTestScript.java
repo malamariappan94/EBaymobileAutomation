@@ -32,13 +32,12 @@ public class LoginTestScript extends TestBase{
 	@Test(priority=1)
 	public void enterUserName() throws Exception{
 		
-		ReadExcelData data = new ReadExcelData();
-		LoginPage login = new LoginPage();
+		
+		LoginPage login = new LoginPage();//
 		GeneralFunctions gn = new GeneralFunctions();
 		
-		String[] loginDetails = data.readLoginDetails();
-		String username = loginDetails[0];
-		String password = loginDetails[1];
+		
+		String username = ReadExcelData.getUserName();
 		
 		LoginPage.changeDriverContextToWeb(driver);
 		Thread.sleep(1000);
@@ -78,9 +77,9 @@ public class LoginTestScript extends TestBase{
 		GeneralFunctions gn = new GeneralFunctions();
 		ReadExcelData data = new ReadExcelData();
 		
-		String[] loginDetails = data.readLoginDetails();
+		//String[] loginDetails = data.readLoginDetails();
 		//String username = loginDetails[0];
-		String password = loginDetails[1];
+		String password = ReadExcelData.getPassword();
 		
 		LoginPage.changeDriverContextToWeb(driver);
 		Thread.sleep(1000);

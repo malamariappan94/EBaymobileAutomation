@@ -2,6 +2,7 @@ package com.ebay.mobileAutomation.commonJavaFunctions;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -11,7 +12,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ReadExcelData {
 	
+	public static ArrayList<String> dataInExcel = null;
+	
 	public String[] readLoginDetails()throws Exception{
+		
+		dataInExcel = new ArrayList<String>();
 		
 		String path = System.getProperty("user.dir");
 		System.out.println("dir : "+path);
@@ -35,9 +40,9 @@ public class ReadExcelData {
             // login[0] = cellIterator.getStringCellValue();
              Cell cell = row.getCell(0);
              //Integer num = (int) cell.getNumericCellValue();
-             login[0] = cell.getStringCellValue();
+             dataInExcel.add(cell.getStringCellValue());
              cell = row.getCell(1);
-             login[1] = cell.getStringCellValue();
+             dataInExcel.add(cell.getStringCellValue());
 
             
 		 }
@@ -45,6 +50,16 @@ public class ReadExcelData {
              excelFile.close();
 		
 		return login;
+	}
+	
+	public static String getUserName() throws Exception{
+		
+		return dataInExcel.get(0);
+	}
+	
+	public static String getPassword() throws Exception{
+		
+		return dataInExcel.get(1);
 	}
 	
 	
